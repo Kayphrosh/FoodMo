@@ -549,10 +549,41 @@ nav {
   background: #357d4c;
   box-shadow: 0px 10px 20px rgba(14, 13, 13, 0.12);
 }
+
+@media screen and (max-width: 768px) {
+  .why-us-text {
+    padding: 10px;
+  }
+  .why-us-text h1 {
+    font-size: 36px;
+  }
+  .why-us-text br {
+    display: none;
+  }
+  .why-us {
+    flex-direction: column;
+    padding: 50px 40px;
+    padding-top: 80px;
+  }
+  .why:nth-child(2) {
+    transform: none;
+  }
+  .why {
+    margin-bottom: 2rem;
+    width: fit-content;
+    min-width: 100%;
+  }
+  .why-us-text .vec-right {
+    top: 9%;
+    transform: translateY(-9%);
+  }
+}
+
 .download-container {
   display: flex;
   justify-content: space-between;
   padding: 30px 100px;
+  padding-right: 50px;
   margin-top: 30px;
 }
 .download-text {
@@ -584,13 +615,12 @@ nav {
 }
 .app-illustration {
   display: flex;
-  flex-direction: 65%;
+  flex-basis: 65%;
 }
 .app-illustration img {
   object-fit: cover;
   object-position: center;
-  width: 620px;
-  height: 620px;
+  width: 100%;
 }
 .download-btn {
   display: flex;
@@ -604,7 +634,28 @@ nav {
 .download-btn img:nth-child(2) {
   margin-left: 2rem;
 }
-
+@media screen and (max-width: 768px) {
+  .download-container {
+    flex-direction: column;
+    padding: 50px 10px;
+  }
+  .download-text {
+    flex-basis: 100%;
+  }
+  .download-text h1 {
+    font-size: 36px;
+  }
+  .download-text br {
+    display: none;
+  }
+  .app-illustration {
+    flex-basis: 100%;
+    margin-top: 3rem;
+  }
+  .app-illustration img {
+    width: 100%;
+  }
+}
 footer {
   display: flex;
   justify-content: space-between;
