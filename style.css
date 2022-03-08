@@ -556,7 +556,7 @@ nav {
   right: 0;
   top: 40%;
   transform: translateY(-20%);
-  transform: translateX(-5%);
+  transform: translateX(-15%);
   z-index: 112;
   width: 70px;
   height: 70px;
@@ -583,7 +583,8 @@ nav {
   }
   .why-us {
     flex-direction: column;
-    padding: 50px 40px;
+    padding: 0px 20px;
+    padding-right: 0;
     padding-top: 80px;
   }
   .why-container {
@@ -596,10 +597,11 @@ nav {
     margin-bottom: 2rem;
     width: fit-content;
     min-width: 100%;
+    height: 310px;
   }
   .why-us-text .vec-right {
-    top: 9%;
-    transform: translateY(-9%);
+    top: 13%;
+    transform: translateY(-13%);
   }
 }
 
@@ -662,6 +664,7 @@ nav {
   .download-container {
     flex-direction: column;
     padding: 50px 10px;
+    padding-top: 0;
   }
   .download-text {
     flex-basis: 100%;
@@ -763,9 +766,12 @@ footer small {
 }
 @media screen and (max-width: 768px) {
   footer {
-    flex-direction: column;
+    flex-direction: column !important;
     padding: 10px;
     min-height: 100%;
     padding: 50px;
+  }
+  footer .nav-bar {
+    position: relative;
   }
 }
