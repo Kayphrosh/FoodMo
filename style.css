@@ -243,11 +243,11 @@ nav {
   }
 }
 @media screen and (max-width: 768px) {
-  .navbar  {
+  .navbar {
     padding: 20px 20px;
   }
   .navbar .logo {
-    width: 125px ;
+    width: 125px;
     height: 34px;
   }
   .hamburger {
@@ -263,7 +263,7 @@ nav {
   .header-text {
     flex-direction: column;
     overflow-y: hidden;
-    padding:  80px 20px;
+    padding: 80px 20px;
     padding-top: 150px;
   }
   .main-text {
@@ -320,7 +320,7 @@ nav {
   }
   .side-text p {
     font-size: 18px;
-    overflow-y: hidden
+    overflow-y: hidden;
   }
   .nav-bar {
     display: none;
@@ -333,7 +333,6 @@ nav {
     min-width: 600px;
     width: 100%;
   }
-
 }
 @media screen and (max-width: 458px) {
   .navbar {
@@ -352,7 +351,6 @@ nav {
     margin: 0;
   }
 }
-
 
 .offers-container {
   display: flex;
@@ -443,7 +441,7 @@ nav {
 }
 @media screen and (max-width: 768px) {
   .offers-container {
-    padding:  50px 10px;
+    padding: 50px 10px;
     padding-top: 0px;
   }
   .offer-text {
@@ -457,6 +455,14 @@ nav {
   .offer-text br {
     display: none;
   }
+  .offer-btn button {
+    width: 210px;
+    font-size: 16px;
+    padding: 5px 2rem;
+  }
+  .offer-btn .iconify {
+    font-size: 2.2rem;
+  }
   .vec-left {
     top: 0px;
   }
@@ -464,7 +470,6 @@ nav {
     bottom: 0;
   }
 }
-
 
 .why-us-container {
   display: flex;
@@ -505,6 +510,11 @@ nav {
   padding-top: 150px;
   position: relative;
 }
+.why-container {
+  display: flex;
+  position: relative;
+  padding-right: 50px;
+}
 .why {
   display: flex;
   flex-direction: column;
@@ -521,7 +531,13 @@ nav {
   color: #f9fffb;
   position: relative;
 }
-.why:nth-child(2) {
+.why-2 {
+  background-image: url(./Images/Collabo.svg) !important;
+}
+.why-3 {
+  background-image: url(./Images/corn.svg) !important;
+}
+.why-container:nth-child(2) {
   transform: translateY(-80px);
 }
 .why p {
@@ -535,12 +551,12 @@ nav {
   line-height: 82.3%;
   color: #ffffff;
 }
-.why button {
+.why-container button {
   position: absolute;
   right: 0;
-  top: 20%;
+  top: 40%;
   transform: translateY(-20%);
-  transform: translateX(50%);
+  transform: translateX(-5%);
   z-index: 112;
   width: 70px;
   height: 70px;
@@ -548,6 +564,11 @@ nav {
   border: 2px solid #357d4c;
   background: #357d4c;
   box-shadow: 0px 10px 20px rgba(14, 13, 13, 0.12);
+  cursor: pointer;
+}
+.why-container button:hover {
+  transform: scale(0.95);
+  transition: 0.5s ease;
 }
 
 @media screen and (max-width: 768px) {
@@ -565,7 +586,10 @@ nav {
     padding: 50px 40px;
     padding-top: 80px;
   }
-  .why:nth-child(2) {
+  .why-container {
+    margin-top: 3rem;
+  }
+  .why-container:nth-child(2) {
     transform: none;
   }
   .why {
@@ -736,4 +760,12 @@ footer small {
   font-size: 18px;
   line-height: 150%;
   color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    padding: 10px;
+    min-height: 100%;
+    padding: 50px;
+  }
 }
