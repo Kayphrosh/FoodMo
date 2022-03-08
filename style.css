@@ -176,6 +176,9 @@ nav {
   margin-top: 40px;
   z-index: 111;
 }
+.illustration img:nth-child(2) {
+  display: none;
+}
 .search-bar {
   font-family: 'DM Sans', sans-serif;
   display: flex;
@@ -235,6 +238,9 @@ nav {
     padding: 50px 30px;
     padding-top: 180px;
   }
+  .main-text {
+    transform: translateX(50px);
+  }
 }
 @media screen and (max-width: 768px) {
   .navbar  {
@@ -257,19 +263,23 @@ nav {
   .header-text {
     flex-direction: column;
     overflow-y: hidden;
+    padding:  80px 20px;
     padding-top: 150px;
+  }
+  .main-text {
+    transform: translateX(0px);
   }
   .main-text h1 {
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
-    line-height: 102.3%;
+    font-size: 52px;
+    line-height: 122.3%;
     margin-top: 2rem;
     text-align: left;
   }
   .main-text .img-1 {
-    width: 85px;
-    height: 40px;
+    width: 50px;
+    height: 30px;
   }
   .main-text .img-2 {
     width: 20px;
@@ -281,19 +291,23 @@ nav {
   .main-text .img-3 {
     width: 134px;
     max-height: 40px;
+    margin-top: 8px;
   }
   .header-text .yellow {
     font-size: 48px;
     padding-top: 20px !important;
   }
-  .maain-text .middle {
+  .main-text .middle {
     padding-top: 10px;
     margin-top: 1rem;
   }
   .header-text .vector-1 {
-    top: 20%;
-    left: 15%;
-    transform: translate(-15%);
+    top: 18%;
+    left: 25%;
+    transform: translate(-18%);
+  }
+  .header-text .vector-2 {
+    bottom: 10px;
   }
   .side-text {
     position: relative;
@@ -311,7 +325,34 @@ nav {
   .nav-bar {
     display: none;
   }
+  .illustration {
+    padding: 10px;
+  }
+  .illustration img {
+    padding: auto;
+    min-width: 600px;
+    width: 100%;
+  }
+
 }
+@media screen and (max-width: 458px) {
+  .navbar {
+    padding: 20px 10px;
+  }
+  .header-text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .illustration img:nth-child(1) {
+    display: none;
+  }
+  .illustration img:nth-child(2) {
+    display: flex;
+    width: fit-content;
+    margin: 0;
+  }
+}
+
 
 .offers-container {
   display: flex;
@@ -365,7 +406,6 @@ nav {
   bottom: 40px;
   transform: translateX(-22%);
 }
-
 .offers-illustration {
   display: flex;
   justify-content: center;
@@ -401,6 +441,30 @@ nav {
   transform: scaleY(0.99);
   transition: all 0.5s ease;
 }
+@media screen and (max-width: 768px) {
+  .offers-container {
+    padding:  50px 10px;
+    padding-top: 0px;
+  }
+  .offer-text {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .offer-text h1 {
+    font-size: 36px;
+    line-height: 90%;
+  }
+  .offer-text br {
+    display: none;
+  }
+  .vec-left {
+    top: 0px;
+  }
+  .vec-right {
+    bottom: 0;
+  }
+}
+
 
 .why-us-container {
   display: flex;
