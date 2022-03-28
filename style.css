@@ -206,7 +206,8 @@ nav {
   font-weight: 400;
   font-size: 16px;
   line-height: 82.3%;
-  color: #8c8c8c;
+  color: #8c8c8c;background: rgba(249, 255, 251, 0.7);
+  backdrop-filter: blur(60px);
 }
 .search-bar button {
   font-family: 'DM Sans', sans-serif;
@@ -233,6 +234,8 @@ nav {
 @media screen and (max-width: 1060px) {
   .navbar {
     padding: 30px 30px;
+    background: rgba(249, 255, 251, 0.7);
+backdrop-filter: blur(60px);
   }
   .header-text {
     padding: 50px 30px;
