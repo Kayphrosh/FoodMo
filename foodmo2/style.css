@@ -430,6 +430,11 @@ header {
     margin-top: 2rem;
   }
 }
+@media screen and (max-width: 868px) {
+  .features span:nth-child(even) {
+    transform: translate(0);
+  }
+}
 @media screen and (max-width: 450px) {
   .features {
     padding-bottom: 150px;
@@ -611,7 +616,7 @@ header {
 .footer-main {
   display: flex;
   justify-content: space-between;
-  padding:200px 100px;
+  padding: 200px 100px;
   padding-top: 150px;
   position: relative;
   overflow: hidden;
@@ -755,11 +760,23 @@ header {
   .footer-main nav {
     margin-top: 3rem;
   }
+  .help-nav h6 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+  }
   .footer-main nav ul {
     margin-top: 2rem;
   }
   .footer-main .big-logo {
     right: 50%;
     transform: translateX(45%);
+  }
+}
+@media screen and (max-width: 450px) {
+  .newsletter button {
+    right: 0%;
+    transform: translateX(0%);
   }
 }
