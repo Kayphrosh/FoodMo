@@ -24,6 +24,9 @@
 a {
   text-decoration: none;
 }
+button {
+  cursor: pointer;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -169,12 +172,14 @@ header {
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
+  width: 100%;
 }
 .waiting-list input {
   font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
   width: 100%;
-  min-width: 378px;
-  max-width: 100%;
+  max-width: 400px;
   height: 59px;
   border: 2px solid #ffffff;
   background-color: transparent;
@@ -210,6 +215,11 @@ header {
   line-height: 23px;
   color: #ffffff;
 }
+.waiting-list button:hover {
+  background-color: transparent;
+  /* color: #28a450; */
+  transition: 0.5s ease;
+}
 @media screen and (max-width: 1060px) {
   .navbar {
     padding: 15px 20px;
@@ -220,11 +230,6 @@ header {
   }
   .heroe-text h2 {
     font-size: 58px;
-  }
-  .waiting-list input {
-    min-width: 280px;
-    padding: 10px 1rem;
-    font-size: 16px;
   }
 }
 
@@ -259,14 +264,12 @@ header {
   .nav-bar {
     display: none;
   }
-  .illustration {
-    padding: 10px;
+  .waiting-list input {
+    max-width: 320px;
+    padding: 10px 1rem;
+    font-size: 16px;
   }
-  .illustration img {
-    padding: auto;
-    min-width: 600px;
-    width: 100%;
-  }
+
 }
 @media screen and (max-width: 458px) {
   .navbar {
@@ -714,6 +717,7 @@ header {
   color: #fff;
 }
 .footer-main small {
+  width: max-content;
   position: absolute;
   left: 45%;
   bottom: 5rem;
