@@ -385,8 +385,8 @@ header {
     padding-bottom: 100px !important;
   }
   .features {
-    column-gap: 2rem !important;
-    row-gap: 6rem !important;
+    column-gap: 2rem;
+    row-gap: 6rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -405,18 +405,20 @@ header {
   }
   .features {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap:  0rem;
+    column-gap: 0rem;
     width: 100%;
     justify-items: center;
     justify-content: center;
     align-items: center;
   }
   .features span {
-    margin-top: 2rem;
     width: 100%;
     max-width: 500px;
     padding: 0;
     margin: 0;
-    border-radius: 25px;
+    margin-top: 4rem;
+    border-radius: 10px;
   }
 
   .features span h5 {
