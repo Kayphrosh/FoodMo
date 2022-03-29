@@ -404,8 +404,9 @@ header {
     font-size: 40px;
   }
   .features {
+    justify-content: space-between;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    row-gap:  0rem;
+    row-gap:  0rem !important;
     column-gap: 0rem;
     width: 100%;
     justify-items: center;
