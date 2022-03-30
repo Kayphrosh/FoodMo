@@ -317,7 +317,7 @@ header {
   justify-content: space-between;
   column-gap: 4rem;
   align-items: center;
-  margin-top: 1gitrem;
+  margin-top: 1rem;
   height: 100%;
   padding-bottom: 300px;
   overflow: hidden;
@@ -373,9 +373,9 @@ header {
   .features span {
     max-width: 530px;
   }
-  .features span:nth-child(even) {
+  /* .features span:nth-child(even) {
     transform: translateY(25%);
-  }
+  } */
 }
 @media screen and (min-width: 600px) {
   .features span:nth-child(even) {
@@ -420,10 +420,7 @@ header {
   .features span {
     width: 100%;
     max-width: 500px;
-    padding: 0;
-    margin: 0;
     border-radius: 25px;
-    margin-top: 4rem !important;
     overflow: hidden;
   }
   .features span h5 {
