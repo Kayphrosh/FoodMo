@@ -322,7 +322,7 @@ header {
   padding-bottom: 300px;
   overflow: hidden;
 }
-.features span {
+.features div {
   display: flex;
   flex-direction: column;
   min-height: 480px;
@@ -332,14 +332,14 @@ header {
   margin-top: 4rem !important;
 }
 
-.features span h5 {
+.features div h5 {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   margin-top: 70px;
   padding-left: 42px;
 }
-.features span p {
+.features div p {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -348,7 +348,7 @@ header {
   margin-right: 100px;
   padding-left: 42px;
 }
-.features span a {
+.features div a {
   font-family: 'gilroy-bold';
   font-size: 18px;
   line-height: 21px;
@@ -357,7 +357,7 @@ header {
   margin-top: 1rem;
   padding-left: 42px;
 }
-.features span img {
+.features div img {
   margin-top: 2rem;
 }
 .features-container aside {
@@ -370,12 +370,12 @@ header {
   .features-container {
     margin: 0 100px;
   }
-  .features span {
+  .features div {
     max-width: 530px;
   }
 }
 @media screen and (min-width: 600px) {
-  .features span:nth-child(even) {
+  .features div:nth-child(even) {
     transform: translateY(25%);
   }
 }
@@ -389,7 +389,7 @@ header {
     column-gap: 2rem;
     row-gap: 2rem;
   }
-  .features span {
+  .features div {
     margin-top: 6em;
   }
 }
@@ -414,7 +414,7 @@ header {
     justify-content: center;
     align-items: center;
   }
-  .features span {
+  .features div {
     width: 100%;
     max-width: 500px;
     padding: 0;
@@ -423,21 +423,21 @@ header {
     margin-top: 4rem !important;
     overflow: hidden;
   }
-  .features span h5 {
+  .features div h5 {
     padding-left: 2rem;
     margin-right: 40px;
   }
-  .features span p {
+  .features div p {
     padding-left: 2rem;
     margin-right: 20px;
   }
-  .features span a {
+  .features div a {
     padding-left: 2rem;
     margin-top: 2rem;
   }
 }
 @media screen and (max-width: 568px) {
-  .features span:nth-child(even) {
+  .features div:nth-child(even) {
     transform: none;
   }
 }
@@ -445,10 +445,10 @@ header {
   .features {
     padding-bottom: 150px;
   }
-  .features span:nth-child(even) {
+  .features div:nth-child(even) {
     transform: none !important;
   }
-  .features span:nth-child(5) img {
+  .features div:nth-child(5) img {
     transform: translateY(15%);
   }
   .features-container aside {
