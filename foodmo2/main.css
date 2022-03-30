@@ -444,7 +444,7 @@ header {
 }
 @media screen and (max-width: 450px) {
   .features {
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     gap: 20px;
   }
   .features div:nth-child(even) {
