@@ -301,7 +301,6 @@ header {
 .features-container header {
   display: flex;
   margin-right: auto;
-  /* padding: 0 25px; */
 }
 .features-container header h3 {
   overflow: hidden;
@@ -318,7 +317,7 @@ header {
   justify-content: space-between;
   column-gap: 4rem;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 1gitrem;
   height: 100%;
   padding-bottom: 300px;
   overflow: hidden;
@@ -332,9 +331,7 @@ header {
   border-radius: 25px;
   margin-top: 4rem !important;
 }
-.features span:nth-child(even) {
-  transform: translateY(25%);
-}
+
 .features span h5 {
   font-weight: 700;
   font-size: 20px;
@@ -376,6 +373,14 @@ header {
   .features span {
     max-width: 530px;
   }
+  .features span:nth-child(even) {
+    transform: translateY(25%);
+  }
+}
+@media screen and (min-width: 600px) {
+  .features span:nth-child(even) {
+    transform: translateY(25%);
+  }
 }
 @media screen and (max-width: 1068px) {
   .features-container {
@@ -385,9 +390,10 @@ header {
   }
   .features {
     column-gap: 2rem;
+    row-gap: 2rem;
   }
   .features span {
-    margin-top: 6rem;
+    margin-top: 6em;
   }
 }
 @media screen and (max-width: 768px) {
@@ -408,7 +414,6 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 2rem;
     width: 100%;
-    /* justify-items: center; */
     justify-content: center;
     align-items: center;
   }
@@ -417,8 +422,7 @@ header {
     max-width: 500px;
     padding: 0;
     margin: 0;
-    margin-top: 4rem;
-    border-radius: 10px;
+    border-radius: 25px;
   }
   .features span h5 {
     padding-left: 2rem;
@@ -441,9 +445,6 @@ header {
 @media screen and (max-width: 450px) {
   .features {
     padding-bottom: 150px;
-  }
-  .features span {
-    margin-bottom: 5rem;
   }
   .features span:nth-child(even) {
     transform: translateY(0);
