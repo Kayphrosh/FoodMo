@@ -373,9 +373,6 @@ header {
   .features span {
     max-width: 530px;
   }
-  /* .features span:nth-child(even) {
-    transform: translateY(25%);
-  } */
 }
 @media screen and (min-width: 600px) {
   .features span:nth-child(even) {
@@ -420,7 +417,10 @@ header {
   .features span {
     width: 100%;
     max-width: 500px;
+    padding: 0;
+    margin: 0;
     border-radius: 25px;
+    margin-top: 4rem !important;
     overflow: hidden;
   }
   .features span h5 {
@@ -438,7 +438,7 @@ header {
 }
 @media screen and (max-width: 568px) {
   .features span:nth-child(even) {
-    transform: translate(0);
+    transform: none;
   }
 }
 @media screen and (max-width: 450px) {
@@ -446,7 +446,7 @@ header {
     padding-bottom: 150px;
   }
   .features span:nth-child(even) {
-    transform: translateY(0);
+    transform: none !important;
   }
   .features span:nth-child(5) img {
     transform: translateY(15%);
