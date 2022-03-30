@@ -449,6 +449,9 @@ header {
   .features span:nth-child(even) {
     transform: translateY(0);
   }
+  .features span:nth-child(5) img {
+    transform: translateY(15%);
+  }
   .features-container aside {
     right: 7%;
     transform: translateX(-7%);
